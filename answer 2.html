@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo copy 2.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="logo">
+                <img src="img/Logo-ISIL.webp" alt="">
+            </div>
+            <div id="titulo">
+                <h1>Introduccion a la programacion</h1>
+            </div>
+
+        </div>
+        <div id="contenido">
+            <div id="enunciado">
+                <p>Ejercicio 02 : En una tienda por departamento se están ajustando los precios de venta de ciertos artículos con el siguiente criterio: si el precio inicial es mayor a S/. 1,000, disminuir el precio en un 10%, caso contrario aumentar el precio en un 20%. Mostrar el precio final del artículo luego de ingresar su precio inicial.</p>
+            </div>
+            <div id="resultado">
+                <script>
+                    
+                    var precioInicial = prompt("Ingrese el precio inicial del artículo (en S/.)");
+
+                    
+                    precioInicial = parseFloat(precioInicial);
+
+                    
+                    var precioFinal;
+
+                    
+                    if (precioInicial > 1000) {
+                        precioFinal = precioInicial * 0.90; // Disminuir 10%
+                    } else {
+                        precioFinal = precioInicial * 1.20; // Aumentar 20%
+                    }
+
+                    
+                    document.write("El precio final del artículo es: S/. " + precioFinal.toFixed(2));
+
+    
+                </script>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
